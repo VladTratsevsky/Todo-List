@@ -74,6 +74,7 @@ body {
 }
 
 .todo-list {
+  box-sizing: border-box;
   border: 0.4px solid gray;
   border-radius: 10px 10px 10px 0px;
   width: 100%;
