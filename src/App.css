@@ -1,0 +1,196 @@
+* {
+  border: none;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #252627;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #868b902c;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+span {
+  color: gray;
+  font-weight: bold;
+  padding-right: 10px;
+  justify-content: center;
+  border: gray;
+}
+
+/*------todoList------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+#root {
+  height: 100vh;
+}
+
+.title {
+  margin-bottom: 40px;
+  color: rgb(156, 155, 155);
+}
+
+.container {
+  width: 60%;
+}
+
+.todo-list {
+  border: 0.4px solid gray;
+  border-radius: 10px 10px 10px 0px;
+  width: 100%;
+  background-color: #252627;
+  padding: 30px 30px 0px 30px;
+}
+.input-container {
+  display: flex;
+  margin-bottom: 40px;
+  background-color: #252627;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px gray;
+}
+.input {
+  padding-left: 20px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  background-color: #252627;
+  width: 80%;
+  height: 50px;
+  border-radius: 10px 0px 0px 10px;
+  color: rgb(156, 155, 155);
+  font-size: 20px;
+}
+.input::placeholder {
+  font-size: 25px;
+  vertical-align: 20px;
+  color: rgb(156, 155, 155);
+}
+.button-add {
+  width: 20%;
+  border-top: 1px solid;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  border-radius: 0px 10px 10px 0px;
+  font-size: 20px;
+  color: rgb(156, 155, 155);
+  font-weight: bold;
+  background: linear-gradient(to left, rgba(128, 128, 128, 0.39), transparent);
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  background-color: #252627;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px gray;
+}
+
+.todoDon {
+  line-height: 36px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(236, 236, 236);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 0.5;
+}
+
+.todo-container {
+  display: flex;
+}
+.button-delete {
+  width: 50px;
+  font-size: 30px;
+  border-radius: 10px 0px 0px 10px;
+  color: rgb(156, 155, 155);
+  background: transparent;
+}
+.text {
+  line-height: 36px;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 20px;
+  color: rgb(156, 155, 155);
+}
+.button-done {
+  color: rgb(156, 155, 155);
+  font-size: 15px;
+  border-radius: 0px 10px 10px 0px;
+  background: linear-gradient(to left, rgba(126, 125, 125, 0.185), transparent);
+}
+
+.done {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 20px;
+  text-decoration: line-through;
+  color: rgb(156, 155, 155);
+}
+
+.highlight {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0a2036;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 1px 1px 3px rgb(94, 88, 177);
+}
+
+.remove-selected {
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(156, 155, 155);
+  border: 0.4px solid gray;
+  border-radius: 0px 0px 0px 10px;
+  background-color: transparent;
+}
+
+.done-selected {
+  height: 50px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(156, 155, 155);
+  border: 0.4px solid gray;
+  border-radius: 0px 0px 10px 0px;
+  background-color: transparent;
+}
